@@ -1,42 +1,113 @@
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GSM DRP TOOL - Herramienta de desbloqueo Android</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <header>
-        <h1>GSM DRP TOOL</h1>
-        <p>Herramienta profesional para desbloqueo y gestión de dispositivos Android.</p>
-    </header>
-    <main>
-        <section class="download">
-            <h2>Descarga la herramienta</h2>
-            <a href="https://drive.google.com/uc?export=download&id=1dxQwurRf4d5RtAUBvvjSVL4hIdJBqTya" target="_blank" class="btn-download">Descargar GSM DRP TOOL</a>
-        </section>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+.container {
+  width: 90%; max-width: 1100px; margin: 0 auto;
+}
+header {
+  background: #0d47a1;
+  padding: 15px 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  height: 40px;
+}
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
 
-        <section class="updates">
-            <h2>Últimas Actualizaciones</h2>
-            <ul>
-                <li><strong>v1.0 - 16 Mayo 2025:</strong> Lanzamiento oficial con funciones ADB y Fastboot.</li>
-                <li><strong>v1.1 - Próximamente:</strong> Integración de soporte para más marcas y modelos.</li>
-            </ul>
-        </section>
+.section {
+  padding: 40px 0;
+}
+.gray-bg {
+  background: #ddd;
+}
+.center {
+  text-align: center;
+}
 
-        <section class="social">
-            <h2>Contáctanos</h2>
-            <ul>
-                <li><a href="https://t.me/tuCanalTelegram" target="_blank">Telegram</a></li>
-                <li><a href="https://facebook.com/tuPaginaFacebook" target="_blank">Facebook</a></li>
-                <li><a href="https://wa.me/573028682421" target="_blank">WhatsApp</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 GSM DRP TOOL. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+.program-capture {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-top: 20px;
+}
+
+#modelList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.model-item {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  flex: 1 0 150px;
+  text-align: center;
+  font-weight: 700;
+  transition: background 0.2s;
+}
+.model-item:hover {
+  background: #ffccbc;
+}
+
+.seller-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.seller-list li {
+  padding: 8px 0;
+  font-weight: 600;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #1565c0;
+  font-weight: 600;
+  margin: 0 8px;
+}
+
+.btn-primary {
+  background: #ff5722;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+.btn-primary:hover {
+  background: #e64a19;
+}
+
+footer {
+  background: #0d47a1;
+  color: white;
+  padding: 15px 0;
+  margin-top: 30px;
+}
