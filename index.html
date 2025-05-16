@@ -1,113 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GSM DRP TOOL - Descarga Oficial</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container">
+    <img src="logo.png" alt="GSM DRP TOOL" class="logo" />
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#modelos">Modelos Compatibles</a>
+      <a href="#vendedores">Vendedores</a>
+      <a href="#descarga">Descarga</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
 
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f4f4f4;
-  color: #333;
-}
-.container {
-  width: 90%; max-width: 1100px; margin: 0 auto;
-}
-header {
-  background: #0d47a1;
-  padding: 15px 0;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header .logo {
-  height: 40px;
-}
-header nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: 600;
-}
-header nav a:hover {
-  text-decoration: underline;
-}
+<section id="inicio" class="section center">
+  <div class="container">
+    <h1>GSM DRP TOOL</h1>
+    <p>Herramienta profesional para desbloqueo y reparación de dispositivos Android.</p>
+    <img src="captura_programa.png" alt="Captura GSM DRP TOOL" class="program-capture" />
+  </div>
+</section>
 
-.section {
-  padding: 40px 0;
-}
-.gray-bg {
-  background: #ddd;
-}
-.center {
-  text-align: center;
-}
+<section id="modelos" class="section">
+  <div class="container">
+    <h2>Modelos Compatibles</h2>
+    <input type="text" id="searchModel" placeholder="Buscar modelo..." />
+    <div class="model-list" id="modelList">
+      <div class="model-item">Samsung</div>
+      <div class="model-item">Xiaomi</div>
+      <div class="model-item">Motorola</div>
+      <div class="model-item">Infinix</div>
+      <div class="model-item">Honor</div>
+      <div class="model-item">Tecno</div>
+      <!-- Más modelos aquí -->
+    </div>
+  </div>
+</section>
 
-.program-capture {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  margin-top: 20px;
-}
+<section id="vendedores" class="section gray-bg">
+  <div class="container">
+    <h2>Vendedores Autorizados</h2>
+    <ul class="seller-list">
+      <li><strong>Juan Pérez</strong> - WhatsApp: +57 3028682421</li>
+      <li><strong>María Gómez</strong> - WhatsApp: +57 3101234567</li>
+      <!-- Más vendedores -->
+    </ul>
+  </div>
+</section>
 
-#modelList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 20px;
-  justify-content: center;
-}
-.model-item {
-  background: white;
-  padding: 15px 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.1);
-  cursor: pointer;
-  flex: 1 0 150px;
-  text-align: center;
-  font-weight: 700;
-  transition: background 0.2s;
-}
-.model-item:hover {
-  background: #ffccbc;
-}
+<section id="descarga" class="section center">
+  <div class="container">
+    <h2>Descarga GSM DRP TOOL</h2>
+    <a href="https://drive.google.com/file/d/1dxQwurRf4d5RtAUBvvjSVL4hIdJBqTya/view?usp=drive_link" target="_blank" class="btn-primary">Descargar desde Google Drive</a>
+  </div>
+</section>
 
-.seller-list {
-  list-style: none;
-  padding: 0;
-  max-width: 600px;
-  margin: 0 auto;
-}
-.seller-list li {
-  padding: 8px 0;
-  font-weight: 600;
-}
+<section id="contacto" class="section gray-bg center">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p>WhatsApp: <a href="https://wa.me/573028682421" target="_blank">+57 302 868 2421</a></p>
+    <p>Síguenos en redes sociales:</p>
+    <div class="social-icons">
+      <a href="#" target="_blank">Facebook</a> | <a href="#" target="_blank">Instagram</a> | <a href="#" target="_blank">YouTube</a>
+    </div>
+  </div>
+</section>
 
-.social-icons a {
-  text-decoration: none;
-  color: #1565c0;
-  font-weight: 600;
-  margin: 0 8px;
-}
+<footer>
+  <div class="container center">
+    <p>GSM DRP TOOL v1.0 - Todos los derechos reservados © 2025</p>
+  </div>
+</footer>
 
-.btn-primary {
-  background: #ff5722;
-  color: white;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  text-decoration: none;
-  display: inline-block;
-  transition: background 0.3s ease;
-}
-.btn-primary:hover {
-  background: #e64a19;
-}
-
-footer {
-  background: #0d47a1;
-  color: white;
-  padding: 15px 0;
-  margin-top: 30px;
-}
+<script src="script.js"></script>
+</body>
+</html>
